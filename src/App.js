@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import { renderRoutes } from 'react-router-config';
+import {useHistory} from 'react-router-dom';
 import routes from './routers';
 import NavBar from './components/Navbar';
 import './App.css';
@@ -8,8 +9,10 @@ import './App.css';
 
 const rootPath = process.env.PUBLIC_URL;
 class App extends React.Component {
+   
   constructor(props) {
     super(props);
+    
   }
 
   render() {

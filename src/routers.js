@@ -1,4 +1,5 @@
 import ContentSearchBook from "./components/ContentSearchBook";
+import ContentLogin from "./components/ContentLogin";
 const rootPath = process.env.PUBLIC_URL;
 
 const routes = [
@@ -7,6 +8,11 @@ const routes = [
     component: ContentSearchBook,
     exact: true,
     breadcrumbName: 'Home'
+  },
+  {
+    path: `${rootPath}/login`,
+    component: ContentLogin,
+    breadcrumbName: 'Login'
   }
 ];
 
