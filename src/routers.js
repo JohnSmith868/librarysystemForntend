@@ -1,5 +1,6 @@
 import ContentSearchBook from "./components/ContentSearchBook";
 import ContentLogin from "./components/ContentLogin";
+import ContentShowMyAppointment from "./components/ContentShowMyAppointment";
 const rootPath = process.env.PUBLIC_URL;
 
 const routes = [
@@ -13,6 +14,11 @@ const routes = [
     path: `${rootPath}/login`,
     component: ContentLogin,
     breadcrumbName: 'Login'
+  },
+  {
+    path: `${rootPath}/myappointment`,
+    component: ContentShowMyAppointment,
+    breadcrumbName: 'My appointments'
   }
 ];
 

@@ -61,4 +61,21 @@ export function handleGetPromise(URL){
       }
     )
   }
+
+
+  export function handleDeleteJSON(URL,data){
+    return fetch(URL,{
+      method:'DELETE',
+      mode:'cors',
+      body: JSON.stringify(data),
+      headers:{
+        'Content-Type': 'application/json',
+        'Authorization':"Bearer "+localStorage.getItem("logintoken")
+      }
+    }).then(
+      function(res){
+        return res.json();
+      }
+    )
+  }
   

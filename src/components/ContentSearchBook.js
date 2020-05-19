@@ -71,7 +71,7 @@ class ContentSearchbook extends React.Component {
                         </thead>
                         <tbody>
                             {this.state.result.map((data, index) => {
-                                return (<SearchResultsBlocaks bookid={data} />)
+                                return (<SearchResultsBlocaks bookid={data} key={index}/>)
                             })}
                         </tbody>
                     </Table>
