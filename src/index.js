@@ -1,13 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+// redux-logger is a middleware that lets you log every state change
+import logger from 'redux-logger';
 
+// redux-thunk is a middleware that lets you dispatch async actions
+import thunk from 'redux-thunk';
+import { createStore } from 'redux';
+import * as serviceWorker from './serviceWorker';
+const initialState = {
+  contentData: <React.Fragment>test</React.Fragment>,
+  isLogin: false,
+  userid: null,
+  otherid: -1,
+  usertype: "unknown"
+};
+
+function reducer(state = initialState, action) {
+  switch (action.type) {
+    case 'setIsLogin':
+      return {
+        isLogin: action.isLogin
+      };
+    default:
+      return state;
+  }
+
+}
+const store = createStore(reducer);
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

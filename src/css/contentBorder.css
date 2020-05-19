@@ -1,0 +1,37 @@
+.contentBorder{
+  border-radius: 5px;
+	width: 80vw;
+	margin:0px auto;
+	text-align: left;
+	opacity: 0.7;
+  background-color: #EEFFFF;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%)
+}
+.contentBorder2{
+  border-radius: 5px;
+	width: 70%;
+	margin:0px auto;
+	text-align: center;
+	opacity: 0.7;
+  background-color: #EEFFFF;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%)
+}
+
+.contentBorderCreateCourse{
+  border-radius: 5px;
+	width: 70%;
+	margin:0px auto;
+	
+	opacity: 0.7;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%)
+}
