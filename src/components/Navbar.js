@@ -86,7 +86,7 @@ class NavBar extends React.Component{
                 <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
                 
-                <LinkContainer to={`${rootPath}/appointmentsmanagement`}>
+                <LinkContainer to={`${rootPath}/allAppointments`}>
                 <Nav.Link>Appointments</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to={`${rootPath}/logout`}>

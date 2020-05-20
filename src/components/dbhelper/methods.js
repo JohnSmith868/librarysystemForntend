@@ -78,4 +78,20 @@ export function handleGetPromise(URL){
       }
     )
   }
+
+  export function handlePutJSON(URL,data){
+    return fetch(URL,{
+      method:'PUT',
+      mode:'cors',
+      body: JSON.stringify(data),
+      headers:{
+        'Content-Type': 'application/json',
+        'Authorization':"Bearer "+localStorage.getItem("logintoken")
+      }
+    }).then(
+      function(res){
+        return res.json();
+      }
+    )
+  }
   
