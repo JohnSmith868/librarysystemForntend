@@ -89,6 +89,9 @@ class NavBar extends React.Component{
                 <LinkContainer to={`${rootPath}/allAppointments`}>
                 <Nav.Link>Appointments</Nav.Link>
                 </LinkContainer>
+                <LinkContainer to={`${rootPath}/bookmanagement`}>
+                <Nav.Link>Book management</Nav.Link>
+                </LinkContainer>
                 <LinkContainer to={`${rootPath}/logout`}>
                 <Nav.Link>Logout</Nav.Link>
                 </LinkContainer>
