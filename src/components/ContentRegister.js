@@ -1,22 +1,23 @@
 import React from "react";
-import { Form, Button, Modal } from 'react-bootstrap';
+import { Form, Button, Alert, Modal } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom'
 import { REQUEST_URL } from './dbhelper/constants';
 import { handlePostJson } from './dbhelper/methods';
 import Loading from './Loading'
 import "../css/contentBorder.css";
 const rootPath = process.env.PUBLIC_URL;
-
-class ContentLogin extends React.Component {
+class ContentRegister extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             username: "",
             password: "",
-            usertype: "normaluser",
+            confirmpwd: "",
             isLoading: false,
-            isLogin: false,
+            isRegister: false,
+            showAlert: false,
+            alertMsg: "something empty.",
             message: "Please wait..."
         }
 
@@ -33,62 +34,44 @@ class ContentLogin extends React.Component {
             password: e.target.value,
         });
     }
-    handleOnchangeUsertype(e) {
+    handleOnchangeConfirmPwd(e) {
         this.setState({
-            usertype: e.target.value
+            confirmpwd: e.target.value
         });
     }
-    handleLogin(e) {
-
-        const postdata = {
-            username: this.state.username,
-            password: this.state.password,
-        }
-
+    handleRegister(e) {
         this.setState({
-            isLoading: true
-        });
-        if (this.state.usertype == "normaluser") {
-
-            var loginNormaluser = handlePostJson(REQUEST_URL + `/login`, postdata);
-            loginNormaluser.then((respone) => {
-                if (respone.length == 1) {
-
-                    localStorage.setItem("logintoken", respone[0].token);
+            isLoading: true,
+        })
+        const { username, password, confirmpwd } = this.state;
+        if (username == "" || password == "" || confirmpwd == "") {
+            this.setState({
+                showAlert: true,
+                isLoading: false,
+            });
+        } else if (password != confirmpwd) {
+            this.setState({
+                showAlert: true,
+                isLoading: false,
+                alertMsg: "password no match, pleas check again."
+            });
+        }else{
+            const postdata = {
+                username:this.state.username,
+                password:this.state.password,
+            }
+            var registerAccount = handlePostJson(REQUEST_URL+`/register`, postdata);
+            registerAccount.then((data)=>{
+                if(data.succeed){
                     this.setState({
-
-                        message: "Login succeed, welcome.",
-                        isLogin:true,
-                    });
-
-
-                } else {
-                    this.setState({
-                        message: "password incorrect",
+                        message:"register succeed.",
+                        isRegister:true,
                         
-                    })
-                }
-            })
-
-        } else if (this.state.usertype == "manager") {
-            var loginManager = handlePostJson(REQUEST_URL + `/login/manager`, postdata);
-            loginManager.then((respone) => {
-                if (respone.length == 1) {
-
-                    localStorage.setItem("logintoken", respone[0].token);
-                    this.setState({
-
-                        message: "Login succeed, welcome.",
-                        isLogin:true,
                     });
-
-                } else {
-                    this.setState({
-                        message: "password incorrect",
-                    })
                 }
-            })
+            });
         }
+
 
 
     }
@@ -98,8 +81,8 @@ class ContentLogin extends React.Component {
         this.setState({
             isLoading: false,
         });
-        if (this.state.isLogin) {
-            window.location.href = `${rootPath}/`;
+        if (this.state.isRegister) {
+            window.location.href = `${rootPath}/login`;
         }
     }
 
@@ -118,17 +101,17 @@ class ContentLogin extends React.Component {
                             <Form.Control onChange={this.handleOnchangePassword.bind(this)} type="password" />
 
                         </Form.Group>
-                        <Form.Group controlId="usertype">
-                            <Form.Label>user type:</Form.Label>
-                            <Form.Control onChange={this.handleOnchangeUsertype.bind(this)} as="select">
-                                <option value="normaluser">user</option>
-                                <option value="manager">manager</option>
+                        <Form.Group controlId="confirmpwd">
+                            <Form.Label>Confirm password:</Form.Label>
+                            <Form.Control onChange={this.handleOnchangeConfirmPwd.bind(this)} type="password">
                             </Form.Control>
                         </Form.Group>
-                        <Button onClick={this.handleLogin.bind(this)} variant="primary">
-                            Login
+                        <Button onClick={this.handleRegister.bind(this)} variant="primary">
+                            Register
                     </Button>
+                    <Alert variant="danger" show={this.state.showAlert} >{this.state.alertMsg}</Alert>
                     </Form>
+                    
                 </div>
                 <Modal show={this.state.isLoading} onHide={this.handleClose.bind(this)}>
                     <Modal.Header closeButton>
@@ -148,4 +131,4 @@ class ContentLogin extends React.Component {
 
 }
 
-export default ContentLogin;
+export default ContentRegister;

@@ -5,7 +5,6 @@ import { LinkContainer } from 'react-router-bootstrap';
 import routes, { rootPath } from '../routers';
 import {handlePostJson} from './dbhelper/methods';
 import {REQUEST_URL} from './dbhelper/constants';
-
 class NavBar extends React.Component{
     constructor(props){
         super(props);
@@ -27,6 +26,10 @@ class NavBar extends React.Component{
                 });
             }
         });
+    }
+    handleLogout(){
+        localStorage.setItem("logintoken","")
+        window.location.href = `${rootPath}/login`;
     }
 
     render(){
@@ -69,9 +72,9 @@ class NavBar extends React.Component{
                 <LinkContainer to={`${rootPath}/myborrow`}>
                 <Nav.Link>My Borrow</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to={`${rootPath}/logout`}>
-                <Nav.Link>Logout</Nav.Link>
-                </LinkContainer>
+                
+                <Nav.Link onClick={this.handleLogout.bind(this)}>Logout</Nav.Link>
+                
             </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -93,7 +96,7 @@ class NavBar extends React.Component{
                 <Nav.Link>Book management</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to={`${rootPath}/logout`}>
-                <Nav.Link>Logout</Nav.Link>
+                <Nav.Link onClick={this.handleLogout.bind(this)}>Logout</Nav.Link>
                 </LinkContainer>
             </Nav>
             </Navbar.Collapse>
