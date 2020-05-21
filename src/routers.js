@@ -4,6 +4,7 @@ import ContentShowMyAppointment from "./components/ContentShowMyAppointment";
 import ContentAppointmentManager from "./components/ContentAppointmentManage";
 import ContentBookManagement from "./components/ContentBookManagement";
 import ContentRegister from "./components/ContentRegister";
+import ContentShowMyBorrows from "./components/ContentShowMyBorrow";
 const rootPath = process.env.PUBLIC_URL;
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
     path: `${rootPath}/register`,
     component: ContentRegister,
     breadcrumbName: 'Register'
+  },
+  {
+    path: `${rootPath}/myborrow`,
+    component: ContentShowMyBorrows,
+    breadcrumbName: 'My Borrows'
   }
 ];
 
