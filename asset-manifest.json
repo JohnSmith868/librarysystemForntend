@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/librarysystemForntend/static/css/main.b97f83fb.chunk.css",
-    "main.js": "/librarysystemForntend/static/js/main.52465f8b.chunk.js",
-    "main.js.map": "/librarysystemForntend/static/js/main.52465f8b.chunk.js.map",
+    "main.js": "/librarysystemForntend/static/js/main.7362056a.chunk.js",
+    "main.js.map": "/librarysystemForntend/static/js/main.7362056a.chunk.js.map",
     "runtime-main.js": "/librarysystemForntend/static/js/runtime-main.7daa90d5.js",
     "runtime-main.js.map": "/librarysystemForntend/static/js/runtime-main.7daa90d5.js.map",
     "static/css/2.af3c1da9.chunk.css": "/librarysystemForntend/static/css/2.af3c1da9.chunk.css",
     "static/js/2.6711f302.chunk.js": "/librarysystemForntend/static/js/2.6711f302.chunk.js",
     "static/js/2.6711f302.chunk.js.map": "/librarysystemForntend/static/js/2.6711f302.chunk.js.map",
     "index.html": "/librarysystemForntend/index.html",
-    "precache-manifest.f742fd234ea6029d11ef6fb97e2f0b9f.js": "/librarysystemForntend/precache-manifest.f742fd234ea6029d11ef6fb97e2f0b9f.js",
+    "precache-manifest.32c219acaad99aeba138a58150a0b00e.js": "/librarysystemForntend/precache-manifest.32c219acaad99aeba138a58150a0b00e.js",
     "service-worker.js": "/librarysystemForntend/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/librarysystemForntend/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.b97f83fb.chunk.css.map": "/librarysystemForntend/static/css/main.b97f83fb.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.6711f302.chunk.js",
     "static/css/main.b97f83fb.chunk.css",
-    "static/js/main.52465f8b.chunk.js"
+    "static/js/main.7362056a.chunk.js"
   ]
 }
