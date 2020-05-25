@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f754bec974be5e40fe3a2e73efa5741",
+    "revision": "0cabc9ecf4cfdaa1d6880a3c15c8d1b6",
     "url": "/librarysystemForntend/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/librarysystemForntend/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "b08a117042747d004ccf",
+    "revision": "93e07b976dc23cf0a4f0",
     "url": "/librarysystemForntend/static/css/main.b97f83fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/librarysystemForntend/static/js/2.6711f302.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b08a117042747d004ccf",
-    "url": "/librarysystemForntend/static/js/main.592fb0ec.chunk.js"
+    "revision": "93e07b976dc23cf0a4f0",
+    "url": "/librarysystemForntend/static/js/main.ae8d9f95.chunk.js"
   },
   {
     "revision": "37b59fcacd487ad1ee93",
