@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter,HashRouter, Switch } from 'react-router-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
@@ -34,9 +34,11 @@ function reducer(state = initialState, action) {
 const store = createStore(reducer);
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
+    
       <App />
-    </BrowserRouter>
+    
+    </HashRouter>
   </Provider>,
   document.getElementById('root')
 );

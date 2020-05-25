@@ -32,7 +32,7 @@ class NavBar extends React.Component{
     handleLogout(){
         
         localStorage.setItem("logintoken","")
-        window.location = `${rootPath}/login`;
+        window.location = `${rootPath}/`;
     }
 
     render(){

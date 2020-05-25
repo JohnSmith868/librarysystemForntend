@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import { renderRoutes } from 'react-router-config';
-import {useHistory} from 'react-router-dom';
+import {useHistory, Switch} from 'react-router-dom';
 import routes from './routers';
 import NavBar from './components/Navbar';
 import './App.css';
@@ -26,6 +26,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <NavBar />
+        
         <div style={style.containerstyle}>
         {renderRoutes(routes)}
         </div>
