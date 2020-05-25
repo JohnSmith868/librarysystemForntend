@@ -12,6 +12,7 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import { createStore } from 'redux';
 import * as serviceWorker from './serviceWorker';
+import { rootPath } from './routers';
 const initialState = {
   contentData: <React.Fragment>test</React.Fragment>,
   isLogin: false,
@@ -34,7 +35,7 @@ function reducer(state = initialState, action) {
 const store = createStore(reducer);
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter>
+    <HashRouter basename={`/`}>
     
       <App />
     

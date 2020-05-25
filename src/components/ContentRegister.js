@@ -82,7 +82,7 @@ class ContentRegister extends React.Component {
             isLoading: false,
         });
         if (this.state.isRegister) {
-            window.location.href = `${rootPath}/login`;
+            window.location.href = `${rootPath}/#/login`;
         }
     }
 

@@ -43,14 +43,14 @@ class NavBar extends React.Component{
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse  id="basic-navbar-nav">
                     <Nav>
-                        <LinkContainer to={`${rootPath}/`}>
+                        <LinkContainer to={`/`}>
                         <Nav.Link>Home</Nav.Link>
                         </LinkContainer>
                         
-                        <LinkContainer to={`${rootPath}/register`}>
+                        <LinkContainer to={`/register`}>
                         <Nav.Link>Register</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to={`${rootPath}/login`}>
+                        <LinkContainer to={`/login`}>
                         <Nav.Link>Login</Nav.Link>
                         </LinkContainer>
                     </Nav>
@@ -65,14 +65,14 @@ class NavBar extends React.Component{
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse  id="basic-navbar-nav">
             <Nav>
-                <LinkContainer to={`${rootPath}/`}>
+                <LinkContainer to={`/`}>
                 <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
                 
-                <LinkContainer to={`${rootPath}/myappointment`}>
+                <LinkContainer to={`/myappointment`}>
                 <Nav.Link>My Appointment</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to={`${rootPath}/myborrow`}>
+                <LinkContainer to={`/myborrow`}>
                 <Nav.Link>My Borrow</Nav.Link>
                 </LinkContainer>
                 
@@ -88,17 +88,17 @@ class NavBar extends React.Component{
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse  id="basic-navbar-nav">
             <Nav>
-                <LinkContainer to={`${rootPath}/`}>
+                <LinkContainer to={`/`}>
                 <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
                 
-                <LinkContainer to={`${rootPath}/allAppointments`}>
+                <LinkContainer to={`/allAppointments`}>
                 <Nav.Link>Appointments</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to={`${rootPath}/bookmanagement`}>
+                <LinkContainer to={`/bookmanagement`}>
                 <Nav.Link>Book management</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to={`${rootPath}/logout`}>
+                <LinkContainer to={`/logout`}>
                 <Nav.Link onClick={this.handleLogout.bind(this)}>Logout</Nav.Link>
                 </LinkContainer>
             </Nav>

@@ -9,38 +9,38 @@ const rootPath = process.env.PUBLIC_URL;
 
 const routes = [
   {
-    path: `${rootPath}/`,
+    path: `/`,
     component: ContentSearchBook,
     exact: true,
     breadcrumbName: 'Home'
   },
   {
-    path: `${rootPath}/login`,
+    path: `/login`,
     component: ContentLogin,
     breadcrumbName: 'Login'
   },
   {
-    path: `${rootPath}/myappointment`,
+    path: `/myappointment`,
     component: ContentShowMyAppointment,
     breadcrumbName: 'My appointments'
   },
   {
-    path: `${rootPath}/allAppointments`,
+    path: `/allAppointments`,
     component: ContentAppointmentManager,
     breadcrumbName: 'All appointments'
   },
   {
-    path: `${rootPath}/bookmanagement`,
+    path: `/bookmanagement`,
     component: ContentBookManagement,
     breadcrumbName: 'Books management'
   },
   {
-    path: `${rootPath}/register`,
+    path: `/register`,
     component: ContentRegister,
     breadcrumbName: 'Register'
   },
   {
-    path: `${rootPath}/myborrow`,
+    path: `/myborrow`,
     component: ContentShowMyBorrows,
     breadcrumbName: 'My Borrows'
   }
