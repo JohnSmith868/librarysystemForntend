@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.b97f83fb.chunk.css",
-    "main.js": "/static/js/main.b7a45821.chunk.js",
-    "main.js.map": "/static/js/main.b7a45821.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.335cebc3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.335cebc3.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.6711f302.chunk.js": "/static/js/2.6711f302.chunk.js",
-    "static/js/2.6711f302.chunk.js.map": "/static/js/2.6711f302.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b051b3841e78ef36846461a6c18227d5.js": "/precache-manifest.b051b3841e78ef36846461a6c18227d5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.b97f83fb.chunk.css.map": "/static/css/main.b97f83fb.chunk.css.map",
-    "static/js/2.6711f302.chunk.js.LICENSE.txt": "/static/js/2.6711f302.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/librarysystemForntend/static/css/main.b97f83fb.chunk.css",
+    "main.js": "/librarysystemForntend/static/js/main.e7bd061f.chunk.js",
+    "main.js.map": "/librarysystemForntend/static/js/main.e7bd061f.chunk.js.map",
+    "runtime-main.js": "/librarysystemForntend/static/js/runtime-main.7daa90d5.js",
+    "runtime-main.js.map": "/librarysystemForntend/static/js/runtime-main.7daa90d5.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/librarysystemForntend/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.6711f302.chunk.js": "/librarysystemForntend/static/js/2.6711f302.chunk.js",
+    "static/js/2.6711f302.chunk.js.map": "/librarysystemForntend/static/js/2.6711f302.chunk.js.map",
+    "index.html": "/librarysystemForntend/index.html",
+    "precache-manifest.cca77138bcde3b4a4ff678837d031466.js": "/librarysystemForntend/precache-manifest.cca77138bcde3b4a4ff678837d031466.js",
+    "service-worker.js": "/librarysystemForntend/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/librarysystemForntend/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.b97f83fb.chunk.css.map": "/librarysystemForntend/static/css/main.b97f83fb.chunk.css.map",
+    "static/js/2.6711f302.chunk.js.LICENSE.txt": "/librarysystemForntend/static/js/2.6711f302.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/librarysystemForntend/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.335cebc3.js",
+    "static/js/runtime-main.7daa90d5.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.6711f302.chunk.js",
     "static/css/main.b97f83fb.chunk.css",
-    "static/js/main.b7a45821.chunk.js"
+    "static/js/main.e7bd061f.chunk.js"
   ]
 }
