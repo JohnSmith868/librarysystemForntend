@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/librarysystemForntend/precache-manifest.cca77138bcde3b4a4ff678837d031466.js"
+  "/librarysystemForntend/precache-manifest.f742fd234ea6029d11ef6fb97e2f0b9f.js"
 );
 
 self.addEventListener('message', (event) => {
