@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import {useLocation, Redirect} from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import routes, { rootPath } from '../routers';
 import {handlePostJson} from './dbhelper/methods';
@@ -27,9 +27,12 @@ class NavBar extends React.Component{
             }
         });
     }
+        
+    
     handleLogout(){
+        
         localStorage.setItem("logintoken","")
-        window.location.href = `${rootPath}/login`;
+        window.location = `${rootPath}/login`;
     }
 
     render(){

@@ -95,11 +95,12 @@ class ContentLogin extends React.Component {
 
 
     handleClose() {
+    
         this.setState({
             isLoading: false,
         });
         if (this.state.isLogin) {
-            window.location.href = `${rootPath}/`;
+            window.location = `${rootPath}/`;
         }
     }
 
